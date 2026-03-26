@@ -1,3 +1,232 @@
+export default function BayhoundsWebsite() {
+  const shows = [
+    { date: 'May 24, 2026', venue: 'Copper Creek Bar', city: 'Pembroke, ON' },
+    { date: 'June 14, 2026', venue: 'Summer Kickoff Festival', city: 'Petawawa, ON' },
+    { date: 'July 5, 2026', venue: 'Private Event', city: 'Ottawa Valley' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#0a0705] text-stone-100 selection:bg-amber-400 selection:text-black">
+      <section className="relative overflow-hidden border-b border-amber-700/20">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            radial-gradient(circle at top, rgba(251,191,36,0.18), transparent 35%),
+            linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.88)),
+            repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 6px)
+          `
+        }} />
+        
+        <div className="absolute -left-24 top-8 h-72 w-72 rounded-full bg-amber-500/10 blur-3xl" />
+        <div className="absolute right-0 top-24 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl" />
+
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-10 md:px-10 lg:grid-cols-[1.15fr,0.85fr] lg:items-center lg:py-20">
+          <div className="space-y-7">
+            <div className="inline-flex items-center rounded-full border border-amber-500/30 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-amber-200 backdrop-blur-sm">
+              Country Rock • Bar Anthems • Festival Nights
+            </div>
+
+            <div className="space-y-4">
+              <h1 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-tight text-stone-50 md:text-7xl lg:text-8xl">
+                The <span className="text-amber-300">Bayhounds</span>
+              </h1>
+              <p className="max-w-2xl text-lg leading-8 text-stone-300 md:text-xl">
+                Hard-driving country rock with grit, hooks, and a smoky backroad attitude. The Bayhounds bring a live show built for packed bars, summer festivals, private parties, and nights people remember.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#booking"
+                className="rounded-2xl bg-amber-400 px-7 py-3.5 text-base font-black uppercase tracking-wide text-black shadow-[0_10px_30px_rgba(251,191,36,0.28)] transition hover:-translate-y-0.5"
+              >
+                Book The Band
+              </a>
+              <a
+                href="#shows"
+                className="rounded-2xl border border-white/15 bg-white/5 px-7 py-3.5 text-base font-bold uppercase tracking-wide text-stone-100 backdrop-blur-sm transition hover:border-amber-300/40 hover:bg-amber-500/10"
+              >
+                See Upcoming Shows
+              </a>
+            </div>
+
+            <div className="grid max-w-2xl gap-4 pt-2 sm:grid-cols-3">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                <p className="text-2xl font-black text-amber-300">Live</p>
+                <p className="mt-1 text-sm uppercase tracking-[0.2em] text-stone-400">Full Band Energy</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                <p className="text-2xl font-black text-amber-300">Country</p>
+                <p className="mt-1 text-sm uppercase tracking-[0.2em] text-stone-400">Rock Edge</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                <p className="text-2xl font-black text-amber-300">Ready</p>
+                <p className="mt-1 text-sm uppercase tracking-[0.2em] text-stone-400">Book Now</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 scale-95 rounded-[2rem] bg-amber-400/15 blur-3xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-amber-400/20 bg-gradient-to-br from-[#1b130d] to-[#0b0908] p-4 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+              <div className="rounded-[1.5rem] border border-white/10 bg-black/30 p-5">
+                <img
+                  src="/mnt/data/bayhounds logo #2.jpg"
+                  alt="The Bayhounds logo"
+                  className="mx-auto w-full max-w-xl rounded-[1.25rem] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-24">
+        <div className="grid gap-6 lg:grid-cols-[1.1fr,0.9fr]">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 shadow-2xl backdrop-blur-sm">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-amber-300">About The Band</p>
+            <h2 className="mt-3 text-3xl font-black uppercase leading-tight text-stone-50 md:text-5xl">
+              Built for a packed room and a loud encore.
+            </h2>
+            <p className="mt-6 text-base leading-8 text-stone-300 md:text-lg">
+              The Bayhounds blend country storytelling, southern grit, and rock-and-roll punch into a show that hits hard from the first song to the last call. Whether it’s a festival stage, a rowdy bar crowd, a wedding dance floor, or a private event, the goal is the same: keep the room alive.
+            </p>
+            <p className="mt-5 text-base leading-8 text-stone-300 md:text-lg">
+              We bring the kind of set that feels wild, tight, and memorable — the soundtrack for late nights, raised glasses, and boots on the floor.
+            </p>
+          </div>
+
+          <div className="grid gap-6">
+            <div className="rounded-[2rem] border border-amber-500/20 bg-gradient-to-br from-amber-500/10 to-transparent p-7">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-amber-300">Perfect For</p>
+              <p className="mt-3 text-lg leading-8 text-stone-200">
+                Bars, festivals, fairgrounds, weddings, private parties, community events, and corporate nights that need a little bite.
+              </p>
+            </div>
+            <div className="rounded-[2rem] border border-white/10 bg-[#120e0b] p-7">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-amber-300">Sound</p>
+              <p className="mt-3 text-lg leading-8 text-stone-200">
+                Country roots, rock weight, strong hooks, and a setlist made to keep a crowd singing and moving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="shows" className="border-y border-white/10 bg-[#0e0a08]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
+          <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-amber-300">Upcoming Shows</p>
+              <h2 className="mt-2 text-3xl font-black uppercase text-stone-50 md:text-5xl">Catch The Bayhounds Live</h2>
+            </div>
+            <p className="max-w-xl text-stone-400">Swap these out as you confirm new venues, festivals, and private bookings.</p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {shows.map((show) => (
+              <div key={show.date + show.venue} className="group rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 transition hover:-translate-y-1 hover:border-amber-400/30 hover:bg-amber-500/[0.05]">
+                <p className="text-sm font-bold uppercase tracking-[0.24em] text-amber-300">{show.date}</p>
+                <h3 className="mt-4 text-2xl font-black text-stone-50">{show.venue}</h3>
+                <p className="mt-2 text-stone-300">{show.city}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-24">
+        <div className="grid gap-8 lg:grid-cols-[0.95fr,1.05fr]">
+          <div className="rounded-[2rem] border border-amber-500/20 bg-gradient-to-br from-amber-500/10 via-[#17110d] to-[#0b0806] p-8 shadow-2xl">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-amber-300">Book The Bayhounds</p>
+            <h2 className="mt-3 text-3xl font-black uppercase text-stone-50 md:text-5xl">Schedule Us For Your Next Show</h2>
+            <p className="mt-5 text-base leading-8 text-stone-300 md:text-lg">
+              Booking for bars, festivals, weddings, private events, and special occasions. Reach out with your date, location, event type, and expected crowd size.
+            </p>
+
+            <div className="mt-8 space-y-5 text-stone-200">
+              <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.3em] text-amber-300">Email</p>
+                <a href="mailto:tlance155@gmail.com" className="mt-2 block text-xl font-black text-stone-50 hover:text-amber-300">
+                  tlance155@gmail.com
+                </a>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.3em] text-amber-300">Phone</p>
+                <a href="tel:+16136394774" className="mt-2 block text-xl font-black text-stone-50 hover:text-amber-300">
+                  613-639-4774
+                </a>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.3em] text-amber-300">Best For</p>
+                <p className="mt-2 text-lg font-semibold text-stone-200">Festivals • Bars • Weddings • Private Events</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 shadow-2xl backdrop-blur-sm">
+            <h3 className="text-2xl font-black uppercase text-stone-50 md:text-3xl">Quick Booking Inquiry</h3>
+            <form className="mt-6 grid gap-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="rounded-2xl border border-white/10 bg-[#110d0b] px-4 py-3.5 text-stone-100 outline-none placeholder:text-stone-500"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="rounded-2xl border border-white/10 bg-[#110d0b] px-4 py-3.5 text-stone-100 outline-none placeholder:text-stone-500"
+                />
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                <input
+                  type="text"
+                  placeholder="Event Date"
+                  className="rounded-2xl border border-white/10 bg-[#110d0b] px-4 py-3.5 text-stone-100 outline-none placeholder:text-stone-500"
+                />
+                <input
+                  type="text"
+                  placeholder="Venue / Location"
+                  className="rounded-2xl border border-white/10 bg-[#110d0b] px-4 py-3.5 text-stone-100 outline-none placeholder:text-stone-500"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Event Type"
+                className="rounded-2xl border border-white/10 bg-[#110d0b] px-4 py-3.5 text-stone-100 outline-none placeholder:text-stone-500"
+              />
+              <textarea
+                rows={6}
+                placeholder="Tell us about your event, expected crowd size, and anything else we should know"
+                className="rounded-2xl border border-white/10 bg-[#110d0b] px-4 py-3.5 text-stone-100 outline-none placeholder:text-stone-500"
+              />
+              <a
+                href="mailto:tlance155@gmail.com?subject=Booking%20Inquiry%20for%20The%20Bayhounds"
+                className="inline-flex w-fit items-center rounded-2xl bg-amber-400 px-6 py-3.5 font-black uppercase tracking-wide text-black shadow-[0_10px_30px_rgba(251,191,36,0.28)] transition hover:-translate-y-0.5"
+              >
+                Send Booking Request
+              </a>
+              <p className="text-sm leading-6 text-stone-400">
+                This can also be connected to a real form service later so venues can submit directly through the site.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 bg-black/40">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-stone-400 md:flex-row md:items-center md:justify-between md:px-10">
+          <p>© 2026 The Bayhounds. Country rock for late nights, loud rooms, and good crowds.</p>
+          <div className="flex gap-5 font-semibold">
+            <a href="#about" className="hover:text-amber-300">About</a>
+            <a href="#shows" className="hover:text-amber-300">Shows</a>
+            <a href="#booking" className="hover:text-amber-300">Booking</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
